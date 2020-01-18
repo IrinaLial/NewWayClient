@@ -18,7 +18,6 @@ import {TripService} from "./service/trip.service";
   ],
   providers: [
     AuthService,
-    TripService
 
 
   ],
