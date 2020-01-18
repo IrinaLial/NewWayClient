@@ -11,6 +11,6 @@ export class TripService {
   }
 
   public findAll(page: number): Observable<ResponseTripDTO> {
-    return this.http.get<ResponseTripDTO>(`${environment.api}trips`);
+    return this.http.get<ResponseTripDTO>(`${environment.api}trips/all`);
   }
 }
