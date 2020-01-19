@@ -1,0 +1,49 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  opacity: 0;
+  cursor: pointer;
+  width: 58px;
+  height: 58px;
+  /*background-color: #2A3F54;*/
+  background: rgba(52, 58, 64, .5);
+  border-radius: 60px;
+  transition: all .2s ease-in-out;
+}
+
+.scroll-to-top:hover {
+  background-color: #2A3F54;
+  opacity: 1;
+  filter: "alpha(opacity=100)";
+  -ms-filter: "alpha(opacity=100)";
+}
+
+.scroll-to-top:focus, .scroll-to-top:hover {
+  color: #fff
+}
+
+.scroll-to-top:hover {
+  background: #343a40
+}
+
+.scroll-to-top i {
+  font-weight: 800
+}
+
+.show-scroll {
+  opacity: 1;
+  transition: all .2s ease-in-out;
+}
+
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  height: 100%;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1 0 auto;
+}

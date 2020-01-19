@@ -1,5 +1,5 @@
 import {ResponseDetail} from './response.detail';
 
-export class JonesResponse {
+export class NewWayResponse {
   status: ResponseDetail;
 }
