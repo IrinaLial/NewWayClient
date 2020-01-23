@@ -17,12 +17,18 @@ import {NgSelectModule} from '@ng-select/ng-select';
 import {NgxMaskModule} from 'ngx-mask';
 import {ToastrModule} from 'ngx-toastr';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { CarComponent } from './pages/car/car.component';
+import {CarService} from "./service/car.service";
+import { UserComponent } from './pages/user/user.component';
+import {UserService} from "./service/user.service";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ErrorComponent
+    ErrorComponent,
+    CarComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +48,8 @@ import {NgxPaginationModule} from 'ngx-pagination';
   providers: [
     AuthService,
     TripService,
+    CarService,
+    UserService,
 
     // token interceptor
     {
